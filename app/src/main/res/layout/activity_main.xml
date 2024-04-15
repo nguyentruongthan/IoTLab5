@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:background = "@color/white"
+  android:orientation="vertical"
+  android:gravity="center_vertical">
+    <LinearLayout
+      android:layout_width = "match_parent"
+      android:layout_height = "175dp"
+      android:orientation = "horizontal"
+      android:layout_marginTop = "10dp"
+      android:padding = "10dp"
+      >
+        <androidx.cardview.widget.CardView
+          android:layout_width = "0dp"
+          android:layout_height = "match_parent"
+
+          android:layout_margin = "10dp"
+          android:layout_weight = "1"
+          app:cardElevation="20dp"
+          >
+            <RelativeLayout
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "#fff"
+              android:paddingRight = "15dp">
+
+                <TextView
+                  android:id="@+id/nhietDo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="Nhiệt độ"
+                  android:textColor="#8a93eb"
+                  android:textSize="20dp" />
+
+                <ImageView
+                  android:id="@+id/nhietDoImage"
+                  android:layout_width="70dp"
+                  android:layout_height="70dp"
+
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  app:srcCompat="@drawable/device_thermostat"
+                  app:tint="#fca5a5" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:layout_width = "0dp"
+          android:layout_height = "match_parent"
+          android:layout_margin = "10dp"
+          android:layout_weight = "1"
+          app:cardElevation="20dp"
+
+          >
+            <RelativeLayout
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "#fff"
+              android:paddingRight = "15dp">
+
+                <TextView
+                  android:id="@+id/doAmKhongKhi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="Độ ẩm"
+                  android:textColor="#8a93eb"
+                  android:textSize="20dp" />
+
+                <ImageView
+                  android:id = "@+id/doAmImage"
+                  android:layout_width="70dp"
+                  android:layout_height="70dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  app:srcCompat="@drawable/opacity"
+                  app:tint = "#9fb6c6"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width = "match_parent"
+      android:layout_height = "175dp"
+      android:orientation = "horizontal"
+      android:padding = "10dp"
+      >
+        <androidx.cardview.widget.CardView
+          android:layout_width = "0dp"
+          android:layout_height = "match_parent"
+
+          android:layout_margin = "10dp"
+          android:layout_weight = "1"
+          app:cardElevation="20dp"
+          >
+            <RelativeLayout
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "#fff"
+              android:paddingRight = "15dp">
+
+                <TextView
+                  android:id="@+id/doAmDat"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="Độ ẩm đất"
+                  android:textColor="#8a93eb"
+                  android:textSize="20dp" />
+
+                <ImageView
+                  android:id="@+id/doAmDatImage"
+                  android:layout_width="70dp"
+                  android:layout_height="70dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  app:srcCompat="@drawable/humi_solid"
+                  app:tint="#ffb047" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:layout_width = "0dp"
+          android:layout_height = "match_parent"
+          android:layout_margin = "10dp"
+          android:layout_weight = "1"
+          app:cardElevation="20dp"
+          >
+            <RelativeLayout
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "#fff"
+              android:paddingRight = "15dp">
+
+                <TextView
+                  android:id="@+id/anhSang"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight= "true"
+                  android:layout_centerVertical = "true"
+                  android:text="Ánh sáng"
+                  android:textColor="#8a93eb"
+                  android:textSize="20dp" />
+
+                <ImageView
+                  android:id="@+id/anhSangImage"
+                  android:layout_width="70dp"
+                  android:layout_height="70dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  app:srcCompat="@drawable/light_mode"
+                  app:tint="#ffee47" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop = "10dp">
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight = "1"
+          android:layout_height="wrap_content"
+          android:orientation = "vertical">
+            <TextView
+              android:id="@+id/nutNhan1Title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center|top"
+              android:text="Nút nhấn 1"
+              android:textColor="#000"
+              android:textSize="20dp"
+              />
+            <androidx.appcompat.widget.SwitchCompat
+              android:id="@+id/nutNhan1"
+              android:layout_gravity = "center"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              android:thumb = "@drawable/thumb"
+              app:track="@drawable/track"
+              app:showText="true"
+              android:textOff="OFF"
+              android:textOn="ON"
+              android:textColor = "#000"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight = "1"
+          android:layout_height="wrap_content"
+          android:orientation = "vertical">
+            <TextView
+              android:id="@+id/nutNhan2Title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center|top"
+              android:text="Nút nhấn 2"
+              android:textColor="#000"
+              android:textSize="20dp"
+              />
+
+            <androidx.appcompat.widget.SwitchCompat
+              android:id="@+id/nutNhan2"
+              android:layout_gravity = "center"
+              android:layout_width = "wrap_content"
+              android:layout_height = "wrap_content"
+              android:thumb = "@drawable/thumb"
+              app:track="@drawable/track"
+              app:showText="true"
+              android:textOff="OFF"
+              android:textOn="ON"
+              android:textColor = "#000"
+              />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

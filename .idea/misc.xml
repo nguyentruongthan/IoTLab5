@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab4/app/src/main/res/layout/activity_main.xml" value="0.14447463768115942" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable-v24/humi_solid.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/device_thermostat.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/ic_launcher_background.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/opacity.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/thong_so_bg.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/thumb.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/drawable/track.xml" value="0.134375" />
+        <entry key="..\:/Users/truong_than/Desktop/code/iot/IoTLab5/app/src/main/res/layout/activity_main.xml" value="0.11822916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
