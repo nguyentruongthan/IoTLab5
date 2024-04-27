@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         }else if(deviceID.equals("1")){//humi soil sensor
             doAmDat.setText(value + "%");
         }else if(deviceID.equals("2")){//humi air sensor
-            doAmKhongKhi.setText(value + "℃");
+            doAmKhongKhi.setText(value + "%");
         }else if(deviceID.equals("3")){//temp sensor
             nhietDo.setText(value + "℃");
         }else if(deviceID.equals("4")){//nut nhan 1
