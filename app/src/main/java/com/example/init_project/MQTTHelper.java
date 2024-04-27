@@ -20,7 +20,7 @@ public class MQTTHelper {
   MqttAndroidClient client;
   String username = "nguyentruongthan";
   String password = "aio_qNbo///71vk0I///uvOGutmbxMWMfphX8E";
-  String topics[] = {"temp", "light", "humiAir", "humiSoil", "nutnhan1", "nutnhan2"};
+  String topics[] = {"ai"};
 
   MQTTHelper(Context context){
     this.password = this.password.replace("/", "");

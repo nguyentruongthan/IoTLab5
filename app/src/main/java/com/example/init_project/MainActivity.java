@@ -61,30 +61,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
         nutNhan1.setOnCheckedChangeListener(
-                (compoundButton, b) -> mqttPublish("nguyentruongthan/feeds/nutnhan1",
-                        nutNhan1.isChecked() ? "1" : "0")
+                (compoundButton, b) -> mqttPublish("nguyentruongthan/feeds/ai",
+                        "4:" + (nutNhan1.isChecked() ? "1" : "0"))
         );
 
         nutNhan2.setOnCheckedChangeListener(
-                (compoundButton, b) -> mqttPublish("nguyentruongthan/feeds/nutnhan2",
-                        nutNhan2.isChecked() ? "1" : "0")
+                (compoundButton, b) -> mqttPublish("nguyentruongthan/feeds/ai",
+                        "5:" + (nutNhan2.isChecked() ? "1" : "0"))
         );
     }
 
     void mqttOnMessage(String topic, String message){
-        if(topic.equals("nguyentruongthan/feeds/temp")){
-            nhietDo.setText(message + "℃");
-        }else if(topic.equals("nguyentruongthan/feeds/humiAir")){
-            doAmKhongKhi.setText(message + "%");
-        }else if(topic.equals("nguyentruongthan/feeds/humiSoil")){
-            doAmDat.setText(message + "%");
-        }else if(topic.equals("nguyentruongthan/feeds/light")){
-            anhSang.setText(message + " Lux");
-        }else if(topic.equals("nguyentruongthan/feeds/nutnhan1")){
-            boolean isChecked = message.equals("1");
+        //mesage = <deviceID>:<value>
+        String splitMessage[] = message.split(":");
+        String deviceID = splitMessage[0];
+        String value = splitMessage[1];
+
+        if(deviceID.equals("0")){//light sensor
+            anhSang.setText(value + " Lux");
+        }else if(deviceID.equals("1")){//humi soil sensor
+            doAmDat.setText(value + "%");
+        }else if(deviceID.equals("2")){//humi air sensor
+            doAmKhongKhi.setText(value + "℃");
+        }else if(deviceID.equals("3")){//temp sensor
+            nhietDo.setText(value + "℃");
+        }else if(deviceID.equals("4")){//nut nhan 1
+            boolean isChecked = value.equals("1");
             nutNhan1.setChecked(isChecked);
-        }else if(topic.equals("nguyentruongthan/feeds/nutnhan2")){
-            boolean isChecked = message.equals("1");
+        }else if(deviceID.equals("5")){//nut nhan 2
+            boolean isChecked = value.equals("1");
             nutNhan2.setChecked(isChecked);
         }
     }
